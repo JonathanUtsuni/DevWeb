@@ -1,0 +1,14 @@
+body{
+    background: #f87117;
+}
+
+h1, h2, h3, h4, h5, h6{
+
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-style: italic; letter-spacing: 1.5px; color: yellow;
+}
+
+p{
+    font-family: 'times new roman';
+    color: rgb(0, 0, 0);
+}
