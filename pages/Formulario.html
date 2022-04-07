@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="../Images/icone.ico">
+    <link rel="stylesheet" href="../stylish/Estilo3.css"  />
+    <title>Dev Web</title>
+</head>
+<body>
+    <h2><center>Formulário de contato</center></h2>
+
+    <form name="Dados" action="" method="post">
+
+       <label> Nome : <input type="text" name="nome" size="20" maxlength="40"> </label><br>
+       <label> Sobrenome:  <input type="text" name="sobre" size="20"> </label><br>
+       <label> Telefone: <input type="text" name="fone" size="20"> </label><br>
+       <label> Email: <input type="email" name="email" value="" size="20"></label><br>
+       <label for="textarea"> Mensagem:</label><br>
+       <textarea name="textarea" id="teataremsg" cols="30" rows="5" ></textarea><br> <br><br>
+        
+        <input type="button" name="btn_concatena" value="enviar" onclick="enviar()"/>
+        <input type="reset" name="btn_cancela" value="cancelar"/>
+    </form>
+
+    <script language"javascript">
+        function enviar(){
+            js_nm = document.Dados.nome.value;
+            js_sob = document.Dados.sobre.value;
+            js_tel = document.Dados.fone.value;
+            js_emai = document.Dados.email.value;
+            js_msg = document.Dados.textarea.value;
+
+            if(js_nm && js_sob &&js_tel && js_emai && js_msg != null){
+                window.alert('Sua msg foi enviada!!!  Sr(a).'+js_msg);
+            }
+            else{
+                window.alert('Algum campo não foi preenchido corretamente');
+            }
+
+        }
+
+    </script>
+        <footer>
+            <h1> Rodapé da página</h1>
+            Contato (11) 4701-7171 ou email@hotdog.com.br <br>
+            Av. Santana, 300 - Vila Nova Rica / São Paulo - SP <br>
+            CEP: 02254-009
+        </footer>
+</body>
+
+</html>
