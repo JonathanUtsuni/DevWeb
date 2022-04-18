@@ -1,29 +1,33 @@
+:root{
+    --text-color:#d1d5d8;
+    --bg-color:#222425;
+    --tx-shadow:6px 5px 2px rgb(131, 18, 131);
+}
 *{
     box-sizing: border-box; margin: 0;
 }
 
 .banner{
-    background: #229999; color: white; text-align: center; margin: auto;width: 100%;
+     color: var(--text-color); text-align: center; margin: auto;width: 100%;
 }
 
-.titulo_banner{
-    color:#0000bb
-}
 
 body{
-    color:red; background: #553399; font-family: 'Open Sans', sans-serif;
+    background: var(--bg-color); font-family: 'Open Sans', sans-serif;
 }
 
 .esporte{
-    color:white;background: #9999CC; text-align: left; width: 40%; height: 110%;
+    text-align: left; width: 40%; height: 110%;
 }
-
+.titulo_banner{
+    text-shadow: 4px 4px 4px var(--tx-shadow);
+}
 .titulo_menu{
      text-align: center;
 }
 
 li{
-    color: white; margin-top: 10px;
+    color: white; margin-top: 10px; text-align: left;
 }
 
 a{
@@ -31,13 +35,15 @@ a{
 }
 
 #tipos_esportes{
-    margin-top: 30px; margin-left: 15px; width: 800px; height: 100px;
-}
-
-section{
-    margin-bottom: 20px;
+    color:var(--text-color);margin-top: 30px; margin-left: 15px; width: 800px; height: 100px;
 }
 
 #rodape{
-    color: black; text-align: center; margin-top: 22%;
+    text-align: center; margin-top: 22%;
+}
+h1{
+    color:pink;
+}
+img{
+    width: 30%; list-style: none;
 }
