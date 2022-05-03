@@ -1,0 +1,42 @@
+:root{
+    --cor-texto:#d1d5d8;
+    --cor-background:#222425;
+}
+
+body{
+    background: var(--cor-background);color: var(--cor-texto);
+}
+
+.menu{
+    list-style:none; text-align: center; margin: 15px; font-size: 150%; word-spacing: 60px;
+}
+
+header{
+    background:rgb(206, 20, 20); height: 75px; ;width: 101.5%; margin-top: -2%; margin-left: -1%;
+}
+
+a{
+    text-decoration: none; color: currentColor;
+}
+
+p{
+    display:inline-block; text-align: center; font-size: 120%;
+}
+
+.ufa{
+    width: 50%; margin-left: 26%;
+}
+
+.tit{
+    text-align: center; font-size: 180%; color: rgb(206, 20, 20);
+}
+
+video{
+    width: 350; height: 240; margin-left: 26%;
+}
+object{
+    width: 350; height: 240;
+}
+embed{
+    width: 350; height: 240;
+}

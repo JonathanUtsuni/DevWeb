@@ -1,47 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta charset="UTF-8">
-    <link rel="icon" href="Images/icone.ico">
-    <link rel="stylesheet" href="stylish/Estilo2.css"/>
-    <title>Dev Web</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Images/icone.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+     <!--CSS-->
+    <link rel="stylesheet" href="stylish/stylesmain.css">
+
+    <title>Esporte Hoje</title>
+
 </head>
-
 <body>
-    <header>
-        <div class="banner">
-            <div class="conteudo">
-                <h1 class="titulo_banner"> Esporte Hoje</h1>
-                <p class="banner_txt"> Acompanhe as melhores notícias do mundo dos esportes</p>
-                <h3><a href="pages/Exemplo.html"> Exemplo de página</a></h3>
-            </div>
 
-        <nav class="esporte">
-            <h3 class="titulo_menu"> Esportes</h3>
+    <!--Header-->
+
+    <header>
+        <a href="index.html" class="logo"><i class="fa-solid fa-futbol"></i></i>SporToday</a>
+
+        <nav class="navbar">
             <ul>
-                <li><a>Futebol</a></li>
-                <a href="pages/Futebol.html"> <img src="Images/brasileirao.png"></a>
-                <li><a>Basquete</a></li>
-                <a href="pages/Basquete.html"> <img src="Images/nba.png"></a>
-                <li><a>Voleibol</a></li>
-                <a href="pages/Volei.html"> <img src="Images/volei.png"></a>
-                <li><a>MMA</a></li>
-                <a href="pages/MMA.html"> <img src="Images/ufc.png"></a>
-                <li><a>Formula 1</a></li>
-                <a href="pages/Formula1.html"> <img src="Images/f1.png"></a>
+                <li><a href="#sports">Esportes</a></li>
+                <li><a href="#plans">Planos</a></li>
+                <li><a href="#home">Login</a></li>
             </ul>
         </nav>
-        </div>
+
+        <div class="fas fa-bars"></div>
+
     </header>
+    <!--Header End-->
 
-    <footer id="rodape">
-        <h2>Informações para contato</h2>
-        Contato (11) 4701-7171 ou email@hotdog.com.br <br>
-        Av. Santana, 300 - Vila Nova Rica / São Paulo - SP <br>
-        CEP: 02254-009
-    </footer>
+    <!--Home-->
+
+    <section class="home" id="home">
+        <div class="content">
+            <h1>Jogos Gravados</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Laborum, aspernatur molestias saepe repellendus accusamus 
+                 pariatur quia cum adipisci tempore quas non, dolorem perferendis 
+                 fugit sed magni reiciendis nostrum, minus consequatur.</p>
+            
+            <a href="#"><button>Ver Mais</button></a>
+        </div>
+    </section>
+
+    <!--Home End-->
+
+    <!--Sports-->
+
+    <section class="sports" id="sports">
+        <h1 class="heading">Melhores jogos</h1>
+        <h3 class="title">Assista já</h3>
+
+        <div class="card-container">
+
+            <div class="card">
+                <a href="pages/futebol.html"><img src="Images/brasileirao.png" alt=""></a>
+                <h3>BRASILEIRÃO</h3>
+                <p>Veja aqui</p>
+            </div>
+
+            <div class="card">
+               <a href="pages/nba.html"><img src="Images/nba.png" alt=""></a> 
+                <h3>NBA</h3>
+                <p>Veja aqui</p>
+            </div>
+
+            <div class="card">
+                <img src="Images/f1.png" alt="">
+                <h3>FORMULA 1</h3>
+                <p>Veja aqui</p>
+            </div>
+
+            <div class="card">
+                <img src="Images/volei.png" alt="">
+                <h3>VOLEI</h3>
+                <p>Veja aqui</p>
+            </div>
+
+            <div class="card">
+                <a href="pages/MMA.html"><img src="Images/ufc.png" alt=""></a>
+                <h3>UFC</h3>
+                <p>Veja aqui</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Sports End-->
+
+    <!--Plans-->
+    
+
+    <section class="container">
+
+        <h1 class="plans" id="plans">Planos</h1>
+        <div class="box-container">
+            <div class="box">
+                <h3>BASIC</h3>
+                <div class="price"><span>$</span>10.<span>00</span></div>
+                <div class="list">
+                    <p> <i class="fas fa-check"></i> 1 opções</p>
+                    <p> <i class="fas fa-check"></i> 1 opções</p>
+                    <p> <i class="fas fa-check"></i> 1 opções</p>
+                    <p> <i class="fas fa-check"></i> 1 opções</p>
+                </div>
+                <a href="" class="btn">Assine já</a>
+            </div>
+
+            <div class="box">
+                <h3>REGULAR</h3>
+                <div class="price"><span>$</span>30.<span>00</span></div>
+                <div class="list">
+                    <p> <i class="fas fa-check"></i> 1 opções</p>
+                    <p> <i class="fas fa-check"></i> 1 opções</p>
+                    <p> <i class="fas fa-check"></i> 1 opções</p>
+                    <p> <i class="fas fa-check"></i> 1 opções</p>
+                </div>
+                <a href="" class="btn">Assine já</a>
+            </div>
+
+            <div class="box">
+                <h3>TOP</h3>
+                <div class="price"><span>$</span>50.<span>00</span></div>
+                <div class="list">
+                    <p> <i class="fas fa-check"></i> 1 opções</p>
+                    <p> <i class="fas fa-check"></i> 1 opções</p>
+                    <p> <i class="fas fa-check"></i> 1 opções</p>
+                    <p> <i class="fas fa-check"></i> 1 opções</p>
+                </div>
+                <a href="" class="btn">Assine já</a>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!--Plans End-->
+
+    <!--Footer-->
+    
+    <section class="footer">
+
+        <div class="icons">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-github"></a>
+        </div>
+
+        <div class="credit"> Criado por <span>Thiago</span> | todos os direitos reservados.</div>
+    </section> 
+
+    <!--Footer End-->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
-
 </html>
