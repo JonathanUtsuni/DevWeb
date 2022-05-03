@@ -1,0 +1,192 @@
+/*importação de fonte utilizada na página*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;1,100&display=swap');
+
+/*Seletor para todos os elementos da página*/
+*{
+    font-family: 'Raleway', sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    outline: none;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+/*variaveis de cor para a página*/
+:root{
+    --caixas:#fbfbfb ;
+    --body-color: #555 ;
+    --link-color: #222;
+    --link-color-hover: #ec5840 ;
+    --preto-quantum: #111111;
+    --azul-classico: #34568B;
+    --botão: #ec5840;
+    --fundo: #404040;
+    --hover: #212121;
+    --caixas-Body: #e6e6e6;
+     }
+
+
+/*Estilização do paragráfo*/
+p{
+    font-size: 2.8rem;
+    padding: 2.5rem;
+}
+
+/*Estilização do cabeçalho da página*/
+header{
+    text-align: center;
+    background-image:linear-gradient(160deg,#ffe425,#018c3d);
+    margin: auto;
+    height: auto;
+    width:  100%;
+    max-width: 1700px;
+    margin-bottom: 12px;
+    box-shadow: 0px 0px 25px 4px rgb(0 0 0 / 25%);
+    border-radius: 25px;
+
+}
+
+/*Seletor para definir tamanho da imagem utilizada no cabeçalho da página*/
+header img{
+    width: 250px;
+    height: 250px;
+}
+
+/*Seletor para formatação e estilização do parágrafo do cabeçalho */
+header p {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 1000;
+    padding: 1rem 1.5rem;
+}
+
+/*Formatação para o corpo e cor da página*/
+body{
+    color: white;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background-color: #072E5D;
+    background-image: linear-gradient(300deg ,#0E7FC7, #072E5D);
+}
+
+/*Estilizando <h3> do corpo da página*/
+body h3{
+    font-size: 20px; 
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700; 
+    color: black;
+    padding: 15px 15px;     
+}
+
+/*Seletor para Conteúdo principal*/
+body .princ h3 {
+    font-size: 25px; 
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 800; 
+    color: white;
+    padding: 55px 0px 25px 0px;     
+}
+
+/*Seletor para formatação da imagem do conteúdo principal da página*/
+body .princ img{
+    max-width: 100% ;
+    max-height: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 25px 4px rgb(0 0 0 / 40%);
+}
+
+/*Seletor para formatação e base para as caixas do corpo da página*/
+body .container-box .caixa{
+    display: inline-flex;
+    border-radius: 10px;
+    flex-direction: column;
+    transition: all 0.5s ease-in-out;
+}
+
+/*Seletor para criação das caixas do conteúdo da página*/
+body .caixa{
+    justify-content: center;
+    background: var(--caixas-Body);;
+    width: auto;
+    height: auto;
+    padding: 15px;
+    margin: 20px 20px 30px 25px;
+    box-shadow: 0px 0px 25px 4px rgb(0 0 0 / 40%);
+
+}
+
+/*formatação da imagem do corpo da página*/
+body .container-box .caixa img{
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+
+}
+
+/*Animação de interação da caixa redimencionando o elemento*/
+body .container-box  .caixa:hover{
+    transform: scale(1.1);
+
+}
+
+/*rodapé da pagina*/
+footer{
+    background:var(--fundo);
+    padding-bottom: 50px;
+}
+
+/*Formatação e estilização do paragráfo do rodapé*/
+footer p {
+    font-size: 35px;
+    color: white;
+    padding-top: 2.5rem;
+}
+
+/*Formatação e estilização do texto <h3> do rodapé*/
+footer h3 {
+    font-size: 15px;
+    padding-top: 4px;
+    color: white;
+}
+
+/*Seletor para a criação de organização das caixas do rodapé*/
+footer .container-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0; 
+
+}
+
+/*Seletor para ajustar o conteudo da caixa e criação da mesma */
+footer .container-box .box{
+    display: inline-flex; 
+    justify-content:center ;
+    align-items: flex-end;
+    padding: 16px;
+    margin: 15px;
+    background: var(--preto-quantum);
+    text-align: center;
+    border-radius: 25px;
+    width: 20rem;
+    box-shadow: 0px 0px 25px 4px rgb(0 0 0 / 40%);
+    transition: all 0.5s ease-in-out;
+
+}
+
+/*Seletor pra formatar o tamanho das imagens do rodapé*/
+footer .container-box .box img{
+    height: 160px;
+    width: 100%;
+}
+
+/*Seletor para animação das caixas do rodapé*/
+footer .container-box .box:hover{
+    transform: scale(1.1);
+    background: var(--hover);
+    }
