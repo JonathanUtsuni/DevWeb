@@ -1,0 +1,79 @@
+/*Estilização do texto*/
+body{
+	color:red ; margin-left:25px; background:darkblue;
+	font-family:'arial'; font-size: 20px; 
+}
+h2{
+	color:orange; margin-left:25px;
+	font-family:'arial'; font-size: 20px;
+}
+/*Estilização do paragráfo*/
+p{
+    font-size: 2.8rem;
+    padding: 2.5rem;
+}
+/*Estilização do cabeçalho*/
+header{
+    text-align: center;
+    background-image:red;
+    margin: auto;
+    height: auto;
+    width:  100%;
+    max-width: 1700px;
+    margin-bottom: 12px;
+    box-shadow: 4px 4px 25px 4px rgb(255 0 0 / 105%);
+    border-radius: 30px;
+}
+header p {
+    color: yellow;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 1000;
+    padding: 1rem 1.5rem;
+}
+/*Estilização do rodapé*/
+footer{
+    background:var(--fundo);
+    padding-bottom: 50px;
+}
+
+footer p {
+    font-size: 35px;
+    color: white;
+    padding-top: 2.5rem;
+}
+
+footer .container-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0; 
+    background: gray;
+
+}
+
+footer .container-box .box{
+    display: inline-flex; 
+    justify-content:center ;
+    align-items: flex-end;
+    padding: 15px;
+    margin: 15px;
+    background: var(--preto-quantum);
+    text-align: center;
+    border-radius: 30px;
+    width: 30rem;
+    box-shadow: 0px 0px 25px 4px rgb(0 0 0 / 40%);
+    transition: all 0.5s ease-in-out;
+
+}
+
+footer .container-box .box img{
+    height: 160px;
+    width: 100%;
+}
+
+footer .container-box .box:hover{
+    transform: scale(1.1);
+    background: var(--hover);
+    }
