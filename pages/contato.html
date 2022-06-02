@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../stylish/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="shortcut icon" href="../Images/icone.ico">
+    <title> Entre em contato </title>
+    <script type="text/javascript" scr="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" scr="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js "></script>
+    <script type="text/javascript" scr="../js/additional-methods.js"></script>
+    <script type="text/javascript" scr="../js/messages_pt_BR.js"></script>
+	
+    <script>
+        $(function(){
+           $("#form_contato").validate({
+               rules:{
+               nome:{
+                   required:true,
+                   minlength:2
+               },
+               email:{
+                   required:true,
+                   email:true
+               },
+               fone:{
+                   required:true,
+                   digits:true,
+                   maxlength:9,
+                   minlength:9
+               },
+               msg:{
+                   required:true,
+                   minWords:2
+               }
+           },
+           messages:{
+               nome:{
+                   required:"Informe um nome!",
+                   minWords:"Informe nome e sobrenome!",
+               },
+               email:{
+                   required:"Informe um e-mail para contato!",
+                   email:"Informe um e-mail válido!"
+               },
+               fone:{
+                   required:"Informe um numero para contato!"
+               },
+               msg:{
+                   required:"Insira o comentário",
+                   minWords:"Insira o comentário"
+               },
+           },
+           submitHandler:function(form){
+               alert("Enviado com sucesso!")
+           }
+           });
+           
+        });
+  </script>
+</head>
+<header>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <img src="../Images/icone.ico" alt="" width="30" height="24" class="d-inline-block align-text-top">Dev web</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  <a class="nav-link" href="futebol.html">Futebol</a>
+                  <a class="nav-link" href="nba.html">Basquete</a>
+                  <a class="nav-link" href="Formula1.html">Formula 1</a>
+                  <a class="nav-link" href="Volei.html">Volei</a>
+                  <a class="nav-link" href="MMA.html">MMA</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+</header>
+<body>
+    <div>
+        <form  method="post" id="form_contato" class="form_contato">
+                  <label for="nome">Nome:</label>
+                  <input type="text" name="nome" id="nome"  class="form-control" required minlength="5"  placeholder="Nome completo"/>
+
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" required class="form-control" placeholder="Email"/>
+
+                  <label for="nome">Telefone:</label>
+                  <input type="text" name="nome" id="nome"  class="form-control" required minlength="9" placeholder="(12)12345-6789"/>
+
+                  <label for="mensagem">Menssagem:</label>
+                  <textarea type="text" name="msg" id="msg" required class="form-control"></textarea>
+
+                  <input type="submit" class="btn btn-success" value="Enviar"/>
+     </form>
+    </div>  
+</body>
+</html>
